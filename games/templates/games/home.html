@@ -9,12 +9,16 @@ Game Shop
 {% block content %}
 
 {% for game in game_list %}
-<div class="game">
+<div class="game_card">
     <h2>{{ game.title }}</h2>
+    {% if game.image %}
+    <img src="{{ game.image.url }}" alt="kartinka" class="game">
+    {% endif %}
     <p>Игра добавлена: {{ game.owner }}</p>
     <p>Цена: {{ game.price }}</p>
     <p>Создано: {{ game.created }}, Обновлено: {{ game.updated }}</p>
     <p>Описание игры: {{ game.description }}</p>
+    <div class="button">Купить игру</div>
 </div>
 {% endfor %}
 {% endblock content %}

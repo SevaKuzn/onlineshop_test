@@ -1,0 +1,40 @@
+body {background-color: #FFE4C4;
+}
+
+h2 {text-align: center;
+    font-size: 65px;
+    color: #8b0000;
+    text-shadow: 1px 2px 5px black;
+}
+
+.game_card {
+    background-color: #FDF5E6;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 1%;
+    padding: 20px;
+    box-shadow: 7px 7px 3px black;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 400px;
+}
+
+.game_card p {
+    text-align: center;
+    display: block;
+}
+
+.button {
+    background-color: #F08080;
+    border-radius: 20px;
+    width: 110px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
