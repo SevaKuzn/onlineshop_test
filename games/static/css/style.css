@@ -38,3 +38,22 @@ h2 {text-align: center;
     margin: 0 auto;
     padding: 5px;
 }
+
+.game-detail-title-1 {
+    color: darkviolet;
+    border-bottom: white 5px double;
+    font-weight: normal;
+    text-align: center;
+}
+
+.game-detail-title-2 {
+    color: darkgreen;
+    border-bottom: greenyellow 3px solid;
+    font-weight: normal;
+}
+
+.price {
+    text-decoration: underline;
+    font-weight: bold;
+    color: magenta;
+}
