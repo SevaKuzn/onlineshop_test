@@ -7,7 +7,17 @@ Game Shop
 {% endblock title %}
 
 {% block content %}
-
+<div class="nav">
+    <h1>Game Shop</h1>
+    <div class="login-logout-reg-nav">
+        {% if user.is_authenticated %}
+        <h3>Добро пожаловать, {{ user.username }} </h3>
+        <a href="{% url 'logout' %}"> Выйти из аккаунта</a>
+        {% else %}
+        <a href="{% url 'login' %}">Войти на сайт</a>
+        {% endif %}
+    </div>
+</div>
 {% for game in game_list %}
 <div class="game_card">
     <h2><a href="{{ game.get_absolute_url }}">{{ game.title }}</a></h2>

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from games.models import Game
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 def home(request):
@@ -11,6 +12,6 @@ class GameListView(ListView):
     template_name = 'games/home.html'
     context_object_name = 'game_list'
 
-class GameDetailView(DetailView):
+class GameDetailView(LoginRequiredMixin, DetailView):
     model = Game
     context_object_name = 'game'

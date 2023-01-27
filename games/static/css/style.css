@@ -57,3 +57,56 @@ h2 {text-align: center;
     font-weight: bold;
     color: magenta;
 }
+
+.login-form input[type=submit], .signup-form input[type=submit], .password-change-form input[type=submit]{
+    font-weight: bold;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: auto;
+}
+
+.login-form label, .signup-form label, .password-change-form label{
+    display: block;
+    font-size: 20px;
+}
+
+.login-form input, textarea, .signup-form input, .password-change-form input {
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+    border: 0;
+    padding: 6px 10px;
+    font-size: 20px;
+    width: 30%;
+}
+
+.login-heading, .signup-heading, .password-change-heading{
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+}
+
+.login-para, .signup-para, .password-change-para {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav1 h1 {
+    font-weight: normal;
+    color: blueviolet;
+    display: inline;
+}
+
+.login-logout-div-nav {
+    float: right;
+    text-align: right;
+}
+
+.login-logout-reg-nav a {
+    text-decoration: none;
+    color: darkblue;
+    float: right;
+    text-align: right;
+    position: absolute;
+}
+
